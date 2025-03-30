@@ -67,3 +67,24 @@
 | 10 |	Consider partnering with other crypto projects to offer exclusive airdrops or promotional offers to users of the website, which could help attract more users and increase engagement.
 | 11 |	Make sure to comply with all relevant regulations and laws in the jurisdictions where the website will be accessible, as failure to do so could result in legal and financial consequences.
 | 12 |	Regularly update and maintain the website to ensure that it remains secure and functional, and to address any bugs or issues that may arise.
+
+
+|  | Build a Http Server |
+| :----: | :--- |
+| **01** | Set up a basic C++ project and include necessary libraries (`sys/socket.h`, `arpa/inet.h`, `unistd.h`, or `boost::asio`). |
+| **02** | Create a **TCP server** that binds to a port and listens for incoming connections. |
+| **03** | Accept client connections using `accept()` and handle multiple clients (single-threaded or multi-threaded). |
+| **04** | Read incoming **HTTP requests** and parse the request line (GET/POST, URL, HTTP version). |
+| **05** | Parse **HTTP headers** and handle request bodies (especially for POST requests). |
+| **06** | Implement routing logic to handle different paths (`/`, `/about`, `/api/data`). |
+| **07** | Send an **HTTP response** with proper headers (`Content-Type`, `Content-Length`, `Connection: keep-alive`). |
+| **08** | Serve **static files** (HTML, CSS, JS) by reading them from the disk and sending them as responses. |
+| **09** | Implement **error handling** (404 Not Found, 500 Internal Server Error, malformed requests). |
+| **10** | Add **support for query parameters** (`/search?q=example`) and parse them correctly. |
+| **11** | Handle **POST requests** and process incoming form data or JSON payloads. |
+| **12** | Implement **multi-threading** or an event-driven model for handling concurrent requests efficiently. |
+| **13** | Optimize server performance using **connection keep-alive** and response caching. |
+| **14** | Secure the server by implementing **HTTPS with TLS/SSL** (using OpenSSL). |
+| **15** | Log requests, responses, and errors for **monitoring and debugging**. |
+| **16** | Test the server using **Postman, curl, or a web browser** to ensure correct functionality. |
+| **17** | Package the server code and provide **clear documentation** on how to use and run it. |
